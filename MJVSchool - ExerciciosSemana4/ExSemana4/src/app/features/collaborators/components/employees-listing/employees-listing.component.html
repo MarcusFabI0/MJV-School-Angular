@@ -1,0 +1,24 @@
+
+<h2 appBlue class="titulo">{{titulo}}</h2>
+<section class="cards">
+  <div *ngFor="let employee of collaborators">
+    <div class="card">
+      <img src="{{employee.img }}">
+      <div class="container">
+        <h4><b>Colaborador</b></h4>
+        <p class="id">ID: {{ employee.id }}</p>
+        <p class="nome">Nome: {{ employee.name }}</p>
+        <p *ngIf="showSalary" class="salario">Salário: {{ employee.salary }}</p>
+        <p class="cargo">Cargo: {{ employee.role }}</p>
+        <br>
+        <p [ngClass]="{'in-project':employee.inProject, 'out-project': !employee.inProject}">
+          {{ employee.inProject ? 'Disponível' : 'Indisponível' }} </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <button (click)="showSalaryYesOrNo()" class="salary-button">Ocultar salário dos colaboradores</button>
+
+
+

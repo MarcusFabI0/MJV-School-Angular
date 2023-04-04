@@ -1,0 +1,96 @@
+.titulo{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 56px;
+}
+
+
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: baseline;
+  padding-top: 5%;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 200px;
+  margin: 1em;
+  margin-top: 5%;
+
+
+}
+
+.card:hover {
+  box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+}
+
+h4{
+  margin: 10px 0px 10px 0px;
+  font-family: 'Krona One', sans-serif;
+}
+
+p {
+
+  font-family: 'MontSerrat', sans-serif;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  max-width:156px;
+  max-height:156px;
+  width: auto;
+  height: auto;
+
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.in-project{
+  color: greenyellow;
+}
+
+.out-project{
+  color: red;
+}
+
+.salary-button{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5%;
+  align-items: center;
+  outline: 0;
+  appearance: none;
+  padding: 0px 12px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: greenyellow;
+  box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  transition: all 150ms ease-in-out 0s;
+  :hover {
+      color: rgb(255, 255, 255);
+      background-color: greenyellow;
+      box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+  }
+
+
+}

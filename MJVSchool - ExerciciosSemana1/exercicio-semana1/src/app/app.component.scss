@@ -1,0 +1,24 @@
+
+.title{
+  background-color: #60489D;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.lorem{
+  flex-direction: column;
+  margin: 10px 25px;
+  display: flex;
+  width: 35%;
+}
